@@ -1,25 +1,32 @@
 import { StatusBar } from 'expo-status-bar';
-import React, {useState} from 'react';
+import React from 'react';
+// Import react hook 'useState'
+// import {useState} from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import Goodbye from './Goodbye';
 import Hello from './Hello';
 
 export default function App() {
 
-  const [isFirstTime, setFirstTime] = useState(true);
-  const [isSignedIn, setSignIn] = useState(false);
+  // update variable to react hook 'useState'
+  let isFirstTime = true;
+  let isSignIn = false;
+  
   
   let popUpAlert = () => {
     Alert.alert('oops...', 'you do something');
   }
 
   let signIn = () => {
-    setFirstTime(false);
-    setSignIn(true);
+    // set first time status to false
+    
+    // set Sign in status to true
+    
   }
 
   let signOut = () => {
-    setSignIn(false);
+    // set sign in status to false
+    
   }
 
  
